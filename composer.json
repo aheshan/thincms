@@ -1,0 +1,18 @@
+{
+	"name": "My App",
+	"description": "Core PHP App",
+	"require": {
+        "twig/twig": "1.*"
+    },
+	"autoload": {
+		"files":[
+			"vendor/twig/twig/lib/Twig/Autoloader.php",
+			"lib/files/lib_functions.php",
+			"lib/files/register_twig.php"
+		],
+		"classmap": [
+			"lib\thincms\src\entities",
+			"lib\thincms\src\services",
+		]
+	}
+}
