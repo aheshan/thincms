@@ -2,13 +2,13 @@
 namespace lib\thincms\src\services;
 
 class DBManager{
-	private $pdo; 
 	
+	private $pdo; 
 
 	public function __construct(){
 	
 		$this->pdo = new PDO(
-		    'mysql:host=localhost;dbname=test',
+		    'mysql:host=localhost;dbname=thincms',
 		    'root',
 		    'root'
 		);

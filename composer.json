@@ -8,11 +8,13 @@
 		"files":[
 			"vendor/twig/twig/lib/Twig/Autoloader.php",
 			"lib/files/lib_functions.php",
+			"config/app_config.php",
+			"config/app_config.php",
 			"lib/files/register_twig.php"
 		],
 		"classmap": [
-			"lib\thincms\src\entities",
-			"lib\thincms\src\services",
+			"lib/thincms/src/entities",
+			"lib/thincms/src/services"
 		]
 	}
 }

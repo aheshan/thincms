@@ -1,6 +1,9 @@
 <?php
 namespace lib\thincms\src\services;
 
-class PostService extends AbstractServiceInterfaceImpl {
+class PostService implements PostServiceInterface {
 	
+	public function createOrUpdatePost($post){
+		
+	}
 }
