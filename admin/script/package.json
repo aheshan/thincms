@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+    	"gulp": "*",
+        "gulp-jshint": "*",
+        "gulp-uglify": "*",
+        "gulp-concat": "*",
+		"del": "*"
+    }
+}
