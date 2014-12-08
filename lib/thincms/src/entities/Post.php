@@ -10,7 +10,6 @@ class Post {
 	private $post_title;
 	private $post_description;
     private $post_date;
-    priavet $allow_comments;
 	private $post_categories;
 
 	public function __construct(){

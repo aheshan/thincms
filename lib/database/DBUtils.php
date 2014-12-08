@@ -61,8 +61,6 @@ class DBUtils{
 				$this->results = $this->database->rowCount();			
 				break;
 			default:
-				// Declare custom class for exception
-				// Thorw exception that you have not provided proper action
 				break;
 		}
 		return $this->results;
