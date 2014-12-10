@@ -1,13 +1,15 @@
 <?php
 namespace lib\database;
 
+require '../../vendor/autoload.php';
+
 use \PDO;
 
 class Database{
-    private $host      = db_config['host'];
-    private $user      = db_config['username'];
-    private $pass      = db_config['password'];
-    private $dbname    = db_config['database'];
+    private $host      = "localhost";
+    private $user      = "root";
+    private $pass      = "root";
+    private $dbname    = "thincms";
  
     private $dbh;
     private $error;

@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+    print = require('gulp-print'),
     del = require('del');
 
 //cleaning files
@@ -13,14 +14,16 @@ gulp.task('clean', function (cb) {
 
 //build category app
 gulp.task('build:category', function () {
-   return gulp.src('apps/category/*.js')
+   return gulp.src([
+        "apps/category/categoryServices.js",
+        "apps/category/categoryControllers.js"
+      ])
+      .pipe(print())
       .pipe(jshint())
-      .pipe(jshint.reporter('default'))
-      .pipe(uglify())
+      .pipe(uglify({mangle: false}))
       .pipe(concat('category_app.js'))
       .pipe(gulp.dest('apps/category'));
 });
 
-//build app
-//build category app
+//build all apps
 gulp.task('build:all',['build:category']);

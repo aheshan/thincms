@@ -1,9 +1,10 @@
 {
-    "dependencies": {
-    	"gulp": "*",
-        "gulp-jshint": "*",
-        "gulp-uglify": "*",
-        "gulp-concat": "*",
-		"del": "*"
-    }
+  "dependencies": {
+    "gulp": "*",
+    "gulp-jshint": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "gulp-print": "~1.1.0",
+    "del": "*"
+  }
 }

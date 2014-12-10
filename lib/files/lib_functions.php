@@ -1,8 +1,6 @@
 <?php
 
-require '../vendor/autoload.php';
-
-use classes\module1\Product;
+require '../../vendor/autoload.php';
 
 /**
  * double given integer number
@@ -21,14 +19,4 @@ function double_number($number){
  */
 function sum_array($array_data){
 	return array_sum($array_data);
-}
-
-function get_product(){
-	$product1 = new Product(1,"Bike",2000);
-
-	$product_data = $product1->toString();
-
-	//By Autoloading class example
-	echo "product detail from library.<br/>";
-	echo $product_data;
 }

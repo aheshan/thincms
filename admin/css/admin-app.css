@@ -1,3 +1,7 @@
 body {
   padding-top: 50px;
 }
+
+.alert_padding{
+	margin-top: 10px;
+}
