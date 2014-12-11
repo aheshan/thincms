@@ -12,3 +12,6 @@ Prerequisite to perform below steps: Nodejs should be installed in your system.
 2. run: npm install
 3. run: gulp clean
 4. run: gulp build:all (this command will regenerate new scripts in relevant sub apps like category_app.js in category module)
+
+UNDER CONSTRUCTION!
+==
