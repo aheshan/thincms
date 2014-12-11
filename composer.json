@@ -1,6 +1,6 @@
 {
-	"name": "My App",
-	"description": "Core PHP App",
+	"name": "thincms",
+	"description": "A very thincms for core PHP developer",
 	"require": {
     },
 	"autoload": {
