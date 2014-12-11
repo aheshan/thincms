@@ -25,9 +25,9 @@ If you wish to change admin app inside script which is built using [angularjs](h
 **Prerequisite to perform below steps: Nodejs should be installed in your system.** 
 
 1. Navigate to admin/scripts directory.
-2. run: npm install
-3. run: gulp clean
-4. run: gulp build:all (this command will regenerate new scripts in relevant sub apps like category_app.js in category module)
+2. run: **npm install**
+3. run: **gulp clean**
+4. run: **gulp build:all** (this command will regenerate new scripts in relevant sub apps like category_app.js in category module)
 
 UNDER CONSTRUCTION!
 ==
