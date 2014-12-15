@@ -4,9 +4,9 @@
   ?>
 
 <div class="container" ng-app="category_app" ng-controller="categoryCtrl as catCtrl" ng-cloak ng-init="catCtrl.initCategories()">
-    <h1>Categories</h1>
-    <button type="submit" class="btn btn-sm btn-success" data-toggle="modal" data-target="#myModal" 
-    ng-click="catCtrl.addCategory()">Add New Category</button>
+    <h1>Media</h1>
+    <button type="submit" class="btn btn-sm btn-success" data-toggle="modal"
+     data-target="#myModal" ng-click="catCtrl.addCategory()">Add New Media</button>
     
     <div class="alert  alert_padding alert-danger" role="alert"
           ng-if="catCtrl.flash.isError">
@@ -28,14 +28,16 @@
     <thead >
       <tr>
         <th>#Id</th>
-        <th>Category Name</th>
-        <th>Parent</th>
+        <th>Media Name</th>
+        <th>Type</th>
+        <th>Link</th>
         <th>Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr ng-repeat="category in catCtrl.categories">
         <td>{{category.category_id}}</td>
+        <td>{{category.category_name}}</td>
         <td>{{category.category_name}}</td>
         <td>{{(category.parent_id == null || category.parent_id == 0) ? "Root" : category.parent_id}}</td>
         <td>
@@ -106,7 +108,7 @@
 <?php
   include_once 'partials/vendor_scripts.php';
 ?>
-<script type="text/javascript" src="script/apps/category/category_app.js"></script>
+<script type="text/javascript" src="script/apps/category/category_app.js"></script
 <?php
   include_once 'partials/footer.php';
 ?>

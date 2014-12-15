@@ -5,7 +5,6 @@
     },
 	"autoload": {
 		"files":[
-			"lib/files/lib_functions.php",
 			"config/app_config.php",
 			"config/db_config.php"
 		],

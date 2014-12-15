@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 //cleaning files
 gulp.task('clean', function (cb) {
   del([
-    'apps/category/category_app.js'
+    'apps/category/category_app.js',
+    'apps/post/post_app.js'
   ], cb);
 });
 
@@ -25,5 +26,18 @@ gulp.task('build:category', function () {
       .pipe(gulp.dest('apps/category'));
 });
 
+//build post app
+gulp.task('build:post', function () {
+   return gulp.src([
+        "apps/post/postServices.js",
+        "apps/post/postControllers.js"
+      ])
+      .pipe(print())
+      .pipe(jshint())
+      .pipe(uglify({mangle: false}))
+      .pipe(concat('post_app.js'))
+      .pipe(gulp.dest('apps/post'));
+});
+
 //build all apps
-gulp.task('build:all',['build:category']);
+gulp.task('build:all',['build:category','build:post']);

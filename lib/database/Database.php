@@ -1,7 +1,6 @@
 <?php
 namespace lib\database;
 
-require '../../vendor/autoload.php';
 
 use \PDO;
 
