@@ -4,6 +4,7 @@ require '../vendor/autoload.php';
 include_once 'api/add_post_api.php';
 include_once 'partials/header.php';
 ?>
+ <link rel="stylesheet" type="text/css" href="css/vendor/trix.css">
 <div class="container" >
 
   <ul class="breadcrumb breadcrumb_pad">
@@ -53,10 +54,8 @@ include_once 'partials/header.php';
       <!-- Textarea -->
       <div class="form-group">
         <label class="control-label" for="post_description">Post Description</label>
-        
-        <textarea class="form-control" id="post_description" 
-        name="post_description" rows="10"><?php echo $post_obj->getPost_description();?></textarea>
-        
+        <input id="post_description" name="post_description" value="<?php echo $post_obj->getPost_description();?>" type="hidden" name="content">
+        <trix-editor input="post_description" style="min-height: 350px;"></trix-editor>
       </div>
     
   </div>
@@ -83,6 +82,7 @@ include_once 'partials/header.php';
   <?php
   include_once 'partials/vendor_scripts.php';
   ?>
+  <script type="text/javascript" src="script/vendor/trix.js"></script>
   <?php
   include_once 'partials/footer.php';
   ?>
