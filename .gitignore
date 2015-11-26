@@ -1,4 +1,4 @@
-admin/script/node_modules/
+./vendor
+./admin/script/node_modules/
 npm-debug.log
-vendor/
 
